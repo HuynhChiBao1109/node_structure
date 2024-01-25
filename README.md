@@ -1,5 +1,10 @@
-RUN DEV 
-## npm run dev
+## Development
 
-RUN PRODUCTION
-## npm run start
+```bash
+$ npm run dev
+```
+## Product
+
+```bash
+$ npm run start
+```
