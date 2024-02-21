@@ -17,8 +17,6 @@ const logger = require('./services/logger.service');
 // init global variable
 global.config = config;
 global.logger = logger;
-// init route
-app.use('v1/api', require('./routes/index'));
 //init route
 app.use('/v1/api', require('./routes/index'));
 // init db
