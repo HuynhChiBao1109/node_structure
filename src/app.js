@@ -12,11 +12,9 @@ app.use(express.urlencoded({ extended: false })); // parse application/x-www-for
 // config morgan
 const morganFormat = process.env.NODE_ENV === 'production' ? 'combined' : 'dev';
 app.use(morgan(morganFormat)); // log requests to the console
-// init loger
-const logger = require('./services/logger.service');
 // init global variable
 global.config = config;
-global.logger = logger;
+global.logger = require('./services/logger.service');
 //init route
 app.use('/v1/api', require('./routes/index'));
 // init db
